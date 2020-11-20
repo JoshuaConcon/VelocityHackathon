@@ -13,6 +13,8 @@ class NotCalendar extends Component {
             timeslotLength: 0.5,
         };
         this.handleNameChange = this.handleNameChange.bind(this);
+        this.handleCapacityChange = this.handleCapacityChange.bind(this);
+        this.handleTimeslotLengthChange = this.handleTimeslotLengthChange.bind(this);
         this.onDrop = this.onDrop.bind(this);
         this.pickerupdate = this.pickerupdate.bind(this);
     }
@@ -22,11 +24,11 @@ class NotCalendar extends Component {
     }
 
     handleCapacityChange(event) {
-        this.setState({name: event.target.capacity});
+        this.setState({capacity: event.target.capacity});
     }
 
     handleTimeslotLengthChange(event) {
-        this.setState({name: event.target.timeslotLength});
+        this.setState({timeslotLength: event.target.timeslotLength});
     }
 
     onDrop(pictureFiles, pictureDataURLs) {
