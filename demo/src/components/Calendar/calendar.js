@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { DropdownButton, Dropdown, ButtonGroup} from 'react-bootstrap';
 export default class BookingCalendar extends React.Component {
-
     constructor(props) {
         super(props);
         this.updateDate = this.updateDate.bind(this);
