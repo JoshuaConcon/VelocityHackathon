@@ -25,9 +25,9 @@ export default class BookingCalendar extends React.Component {
         })
     }
 
-    updateOption(e) {
+    updateOption(option) {
         this.setState({
-            selectedOption: e.target.outerText
+            selectedOption: option
         })
     }
     
@@ -44,7 +44,7 @@ export default class BookingCalendar extends React.Component {
                 <Calendar className="shadow mb-5 bg-white rounded" style={{width: "50%", border: "none"}} onChange={this.updateDate} />
             </div>
             <div style={{marginLeft: "25%", marginRight: "30%", marginTop: "25px"}}>
-                <DropdownButton style={{textAlign: "center"}} key="Danger" id='dropdown-variants-Danger' variant="danger" title={this.state.selectedOption} onClick={this.updateOption}>
+                <DropdownButton style={{textAlign: "center"}} key="Danger" id='dropdown-variants-Danger' variant="danger" title={this.state.selectedOption} onSelect={this.updateOption}>
                     <Dropdown.Item eventKey="General Work Out">General Work Out</Dropdown.Item>
                     <Dropdown.Item eventKey="Cardio/Treadmill">Cardio/Treadmill</Dropdown.Item>
                     <Dropdown.Item eventKey="Yoga Room">Yoga Room</Dropdown.Item>
