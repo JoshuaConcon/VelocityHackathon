@@ -1,12 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-<<<<<<< HEAD
-import SBAForm from './components/SBAForm'
-
-function App() {
-  return (
-    <SBAForm />
-=======
 import NotCalendar from './components/notCalendar/'
 import BookingCalendar from './components/Calendar/calendar';
 
@@ -49,7 +42,6 @@ function App() {
         </Route>
       </Switch>
     </BrowserRouter>
->>>>>>> 04951a5a2f1ff685d606b21a9cb407af19b27f34
   );
 }
 
