@@ -21,61 +21,61 @@ class Tiles extends Component {
                     <tr>
                         <td>10:00am - 11:00am</td>
                         <td>{this.props.name}</td>
-                        <td>9 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>11:00am - 12:00pm</td>
                         <td>{this.props.name}</td>
-                        <td>12 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>12:00pm - 1:00pm</td>
                         <td>{this.props.name}</td>
-                        <td>8 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>1:00pm - 2:00pm</td>
                         <td>{this.props.name}</td>
-                        <td>5 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>2:00pm - 3:00pm</td>
                         <td>{this.props.name}</td>
-                        <td>15 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>3:00pm - 4:00pm</td>
                         <td>{this.props.name}</td>
-                        <td>2 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>5:00pm - 6:00pm</td>
                         <td>{this.props.name}</td>
-                        <td>1 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>6:00pm - 7:00pm</td>
                         <td>{this.props.name}</td>
-                        <td>9 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>7:00pm - 8:00pm</td>
                         <td>General Workout (Co-ed)</td>
-                        <td>10 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                     <tr>
                         <td>8:00pm - 9:00pm</td>
                         <td>General Workout (Co-ed)</td>
-                        <td>14 spots</td>
+                        <td>{Math.floor(1 + Math.random() * (20 - 1))} spots</td>
                         <td><Button>Book</Button></td>
                     </tr>
                 </tbody>
