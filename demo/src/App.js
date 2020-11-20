@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NotCalendar from './components/notCalendar/'
+import BookingCalendar from './components/Calendar/calendar';
 
 import {
   BrowserRouter,
@@ -34,7 +35,7 @@ function App() {
           <NotCalendar />
         </Route>
         <Route path="/calendar">
-          <div>calendar</div>
+          <BookingCalendar />
         </Route>
         <Route path="/form">
           <div>form</div>
