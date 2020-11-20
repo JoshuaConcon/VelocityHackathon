@@ -3,6 +3,7 @@ import './App.css';
 import NotCalendar from './components/notCalendar/';
 import BookingCalendar from './components/Calendar/calendar';
 import Tiles from './components/Tiles';
+import SBAForm from './components/SBAForm';
 
 import {
   BrowserRouter,
@@ -39,7 +40,7 @@ function App() {
           <BookingCalendar />
         </Route>
         <Route path="/form">
-          <div>form</div>
+          <SBAForm />
         </Route>
         <Route path="/tiles">
           <Tiles />
