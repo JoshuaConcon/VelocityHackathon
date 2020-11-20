@@ -10,7 +10,7 @@ class NotCalendar extends Component {
             name: '',
             pictures: [],
             capacity: 0,
-            timeslotLength: 0.5,
+            timeslotLength: 0,
         };
         this.handleNameChange = this.handleNameChange.bind(this);
         this.handleCapacityChange = this.handleCapacityChange.bind(this);
