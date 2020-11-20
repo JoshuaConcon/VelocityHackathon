@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import NotCalendar from './components/notCalendar/'
+import NotCalendar from './components/notCalendar/';
 import BookingCalendar from './components/Calendar/calendar';
+import Tiles from './components/Tiles';
 
 import {
   BrowserRouter,
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route path="/form">
           <div>form</div>
+        </Route>
+        <Route path="/tiles">
+          <Tiles />
         </Route>
       </Switch>
     </BrowserRouter>
