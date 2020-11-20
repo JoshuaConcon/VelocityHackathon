@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import NotCalendar from './components/notCalendar/'
 
 import {
   BrowserRouter,
@@ -28,6 +29,9 @@ function App() {
               </a>
             </header>
           </div>
+        </Route>
+        <Route path="/notcalendar">
+          <NotCalendar />
         </Route>
         <Route path="/calendar">
           <div>calendar</div>
