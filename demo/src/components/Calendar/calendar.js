@@ -1,6 +1,6 @@
 import React from 'react';
 import Calendar from 'react-calendar';
-// import Dropdown from 'react-dropdown';
+import Tiles from '../Tiles';
 import Logo from './LOGO4_vive_fitness_toronto_gym_247.png';
 import 'react-calendar/dist/Calendar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -42,15 +42,17 @@ export default class BookingCalendar extends React.Component {
                 </a>
             </nav>
             <div style={{marginLeft: "35%", marginRight: "30%", marginTop: "25px"}}>
-                <Calendar className="shadow p-3 mb-5 bg-white rounded" style={{width: "50%", border: "none"}} onChange={this.updateDate} />
+                <Calendar className="shadow mb-5 bg-white rounded" style={{width: "50%", border: "none"}} onChange={this.updateDate} />
             </div>
-            <div className="shadow p-3 mb-5 bg-white rounded" style={{marginLeft: "25%", marginRight: "30%", marginTop: "25px"}}>
-                {/* <Dropdown arrowClosed={<span className="arrow-closed" />} arrowOpen={<span className="arrow-open" />} options={this.state.options} onChange={this.updateOption} value={this.state.selectedOption} placeholder="Select an option" /> */}
+            <div className="shadow mb-5 bg-white rounded" style={{marginLeft: "25%", marginRight: "30%", marginTop: "25px"}}>
                 <DropdownButton key="Danger" id='dropdown-variants-Danger' variant="danger" title={this.state.selectedOption} onClick={this.updateOption}>
                     <Dropdown.Item eventKey="General Work Out">General Work Out</Dropdown.Item>
                     <Dropdown.Item eventKey="Cardio/Treadmill">Cardio/Treadmill</Dropdown.Item>
                     <Dropdown.Item eventKey="Yoga Room">Yoga Room</Dropdown.Item>
                 </DropdownButton>
+            </div>
+            <div className="shadow mb-5 bg-white rounded" style={{marginLeft: "25%", marginRight: "30%", marginTop: "25px"}}>
+                <Tiles name={this.state.selectedOption}/>
             </div>
         </div>
     }
