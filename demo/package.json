@@ -6,8 +6,13 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.1",
     "@testing-library/user-event": "^12.2.2",
+<<<<<<< HEAD
     "@wojtekmaj/react-timerange-picker": "^3.0.0",
+=======
+    "bootstrap": "^4.5.3",
+>>>>>>> d986d616f54dcbf62027a3cc008f042ca788d21d
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-images-upload": "^1.2.8",
     "react-router-dom": "^5.2.0",

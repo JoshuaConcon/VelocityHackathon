@@ -1,6 +1,8 @@
 import React from 'react';
-import Calendar from 'react-calendar'
+import Calendar from 'react-calendar';
 import Dropdown from 'react-dropdown';
+import 'react-calendar/dist/Calendar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default class BookingCalendar extends React.Component {
 
     constructor(props) {
@@ -31,9 +33,11 @@ export default class BookingCalendar extends React.Component {
 
     render() {
         return <div>
-            <div style={{width: "50%", height: "200%"}}>
-                <Calendar onChange={this.updateDate} />
-                <Dropdown options={this.state.options} onChange={this.updateOption} value={this.state.selectedOption} placeholder="Select an option" />;
+            <div style={{marginLeft: "30%", marginRight: "30%", marginTop: "25px"}}>
+                <div className="shadow p-3 mb-5 bg-white rounded">
+                    <Calendar style={{width: "50%", border: "none"}} onChange={this.updateDate} />
+                </div>
+                <Dropdown options={this.state.options} onChange={this.updateOption} value={this.state.selectedOption} placeholder="Select an option" />
             </div>
         </div>
     }
