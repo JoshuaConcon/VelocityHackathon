@@ -44,11 +44,11 @@ class NotCalendar extends Component {
         return(
             <div className="Main">
                 <div>
-                    <h1>business name:</h1>
+                    <h1>Business Name:</h1>
                     <input type="text" value={this.state.name} onChange={this.handleNameChange} />
                 </div>
                 <div>
-                    <h1>business logo:</h1>
+                    <h1>Business Logo:</h1>
                     <ImageUploader
                         withIcon={true}
                         buttonText="Choose images"
@@ -57,18 +57,25 @@ class NotCalendar extends Component {
                         maxFileSize={5242880}
                     />
                 </div>
-                <div>
-                    <h1>operating hours:</h1>
+                <div className="Main">
+                    <h1>Operating Hours:</h1>
                     <TimeRangePicker hourmarkers hourlines timeupdate={this.pickerupdate}/>
                 </div>
+                <br />
+                <br />
+                <br />
                 <div>
-                    <h1>set capacity:</h1>
+                    <h1>Set Timeslot Capacity:</h1>
                     <input type="number" value={this.state.capacity} onChange={this.handleCapacityChange} />
                 </div>
                 <div>
-                    <h1>timeslot length (hours):</h1>
+                    <h1>Timeslot Length (Hours):</h1>
                     <input type="number" value={this.state.timeslotLength} onChange={this.handleTimeslotLengthChange} />
                 </div>
+                <br />
+                <button type="button">Generate</button>
+                <br />
+                <br />
             </div>
         )
     }
